@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# MRA Management Associates — Official Website
+# Plot 75, Kisasa B Centre Block F, P.O. Box 1446, Dodoma, Tanzania
+Sitemap: https://www.mra.co.tz/sitemap.xml

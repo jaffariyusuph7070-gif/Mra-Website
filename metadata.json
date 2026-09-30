@@ -1,0 +1,6 @@
+{
+  "name": "MRA Management Associates",
+  "description": "Official corporate website of MRA Management Associates (Est. 2005, Dodoma, Tanzania) — Strategic Management, Organizational Development, Value Chain Analysis, and Research Consultancy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

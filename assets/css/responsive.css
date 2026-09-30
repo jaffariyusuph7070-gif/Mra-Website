@@ -1,0 +1,271 @@
+/* ==========================================================================
+   MRA MANAGEMENT ASSOCIATES — RESPONSIVE BREAKPOINTS STYLESHEET
+   Supports: 320px, 360px, 375px, 390px, 414px, 480px, 768px, 1024px,
+             1280px, 1440px, 1920px+
+   ========================================================================== */
+
+/* Ultra-Wide Desktop (1440px - 1920px+) */
+@media (min-width: 1440px) {
+  :root {
+    --container-max: 1320px;
+  }
+}
+
+/* Laptop / Standard Desktop (<= 1280px) */
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 1.75rem;
+  }
+
+  .hero__grid {
+    gap: 2.5rem;
+  }
+
+  .approach-timeline {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .approach-timeline::before {
+    display: none;
+  }
+
+  .clients-wall {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet Landscape / Small Laptop (<= 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .section {
+    padding: 4.25rem 0;
+  }
+
+  .primary-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .hero {
+    padding: 3.5rem 0 4rem;
+  }
+
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .editorial-split {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .services-bento {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card--featured {
+    grid-column: span 2;
+  }
+
+  .other-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .philosophy-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy-banner__content {
+    padding: 2.5rem;
+  }
+
+  .philosophy-banner__media {
+    min-height: 280px;
+    max-height: 380px;
+  }
+
+  .projects-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .credibility-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Tablet Portrait / Large Phones (<= 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 62px;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-header--split {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .header-actions .btn--header-cta {
+    display: none;
+  }
+
+  .hero__credentials {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .vm-grid,
+  .values-grid,
+  .compliance-grid,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-bento,
+  .other-services-grid,
+  .projects-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card--featured {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+  }
+
+  /* Vertical Timeline on Mobile */
+  .approach-timeline {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-left: 1.25rem;
+    border-left: 2px solid var(--accent);
+  }
+
+  .approach-step {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+  }
+
+  .clients-wall {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lightbox {
+    padding: 1rem;
+  }
+
+  .lightbox__btn--prev {
+    left: 0.75rem;
+    bottom: 1.25rem;
+    top: auto;
+    transform: none;
+  }
+
+  .lightbox__btn--next {
+    right: 0.75rem;
+    bottom: 1.25rem;
+    top: auto;
+    transform: none;
+  }
+
+  .lightbox__btn--close {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Breakpoints (480px, 414px, 390px, 375px, 360px, 320px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .hero__title {
+    font-size: 1.85rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .credibility-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .clients-wall {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy-banner__content {
+    padding: 1.75rem 1.35rem;
+  }
+
+  .contact-info-card,
+  .form-panel {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .hero__caption {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand-wordmark {
+    font-size: 1rem;
+  }
+
+  .hero__title {
+    font-size: 1.65rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1.1rem;
+    font-size: 0.82rem;
+  }
+}
